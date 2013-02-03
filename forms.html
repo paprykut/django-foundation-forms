@@ -1,0 +1,18 @@
+<!-- Forms rendering with Zurb-Foundation. -->
+{% for hidden in form.hidden_fields %}
+  {{ hiden }}
+{% endfor %}
+
+{% for field in form.visible_fields %}
+  {% if field.errors %}
+    {% for error in field.errors %}
+      <div class="error">
+        <label>{{ field.label_tag }}</label>
+        {{ field }}
+        <small>{{ error|escape }}</small>
+      </div>
+    {% endfor %}
+  {% else %}
+    {{ field }}
+  {% endif %}
+{% endfor %}
