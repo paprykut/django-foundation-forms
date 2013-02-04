@@ -13,6 +13,6 @@ Move **forms.html** to your project template directory. In my case, this would b
 
 In order to use the form generation in your templates, include the following 
 code within the respective html files:<br>
-`{% include "forms.py" with form=form %}`
+`{% include "forms.html" with form=form %}`
 
 The "form" variable is passed from **views.py**.
