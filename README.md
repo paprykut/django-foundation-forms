@@ -16,7 +16,7 @@ code within the respective html files:<br>
 ```
 <form action="" method="post" class="custom">
   {% csrf_token %}
-  {% include "forms.html" with form=form %}`
+  {% include "forms.html" with form=form %}
   <input type="submit" class="button" value="Log in &raquo;">
 </form>
 ```
