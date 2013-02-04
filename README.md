@@ -7,7 +7,7 @@ Usage
 =====
 
 First, clone the project:<br>
-`git clone git://github.com/paprykut/django-foundation-forms`
+`git clone git://github.com/paprykut/django-foundation-forms.git`
 
 Move **forms.py** to your project template directory. In my case, this would be:<br>
 `/home/paprykut/myproject/myproject/templates/`
