@@ -39,10 +39,17 @@
 
 <p>First, clone the project:<br><code>git clone git://github.com/paprykut/django-foundation-forms.git</code></p>
 
-<p>Move <strong>forms.py</strong> to your project template directory. In my case, this would be:<br><code>/home/paprykut/myproject/myproject/templates/</code></p>
+<p>Move <strong>forms.html</strong> to your project template directory. In my case, this would be:<br><code>/home/paprykut/myproject/myproject/templates/</code></p>
 
 <p>In order to use the form generation in your templates, include the following 
-code within the respective html files:<br><code>{% include "forms.py" with form=form %}</code></p>
+code within the respective html files:<br></p>
+
+<pre><code>&lt;form action="" method="post" class="custom"&gt;
+  {% csrf_token %}
+  {% include "forms.html" with form=form %}
+  &lt;input type="submit" class="button" value="Log in &amp;raquo;"&gt;
+&lt;/form&gt;
+</code></pre>
 
 <p>The "form" variable is passed from <strong>views.py</strong>.</p>
       </section>
